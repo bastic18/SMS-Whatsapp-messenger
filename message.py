@@ -1,0 +1,198 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'message.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.2
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+import backendsms
+
+class Ui_MessageApp(object):
+    def setupUi(self, MessageApp):
+        MessageApp.setObjectName("MessageApp")
+        MessageApp.resize(891, 710)
+        MessageApp.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"color: rgb(107, 62, 255);")
+        self.page = QtWidgets.QWidget()
+        self.page.setObjectName("page")
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.page)
+        self.lineEdit_2.setGeometry(QtCore.QRect(210, 140, 481, 51))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.lineEdit_2.setFont(font)
+        self.lineEdit_2.setStyleSheet("background-color: rgb(207, 251, 255);\n"
+"background-color: rgb(255, 242, 233);")
+        self.lineEdit_2.setText("")
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.label_6 = QtWidgets.QLabel(self.page)
+        self.label_6.setGeometry(QtCore.QRect(40, 250, 161, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_6.setFont(font)
+        self.label_6.setObjectName("label_6")
+        self.label_2 = QtWidgets.QLabel(self.page)
+        self.label_2.setGeometry(QtCore.QRect(340, 40, 211, 51))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setItalic(True)
+        font.setWeight(75)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.plainTextEdit_2 = QtWidgets.QPlainTextEdit(self.page)
+        self.plainTextEdit_2.setGeometry(QtCore.QRect(210, 250, 481, 201))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.plainTextEdit_2.setFont(font)
+        self.plainTextEdit_2.setStyleSheet("\n"
+"background-color: rgb(207, 251, 255);\n"
+"background-color: rgb(255, 242, 233);")
+        self.plainTextEdit_2.setObjectName("plainTextEdit_2")
+        self.label_7 = QtWidgets.QLabel(self.page)
+        self.label_7.setGeometry(QtCore.QRect(60, 140, 91, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_7.setFont(font)
+        self.label_7.setObjectName("label_7")
+        self.pushButton_2 = QtWidgets.QPushButton(self.page)
+        self.pushButton_2.setGeometry(QtCore.QRect(350, 480, 201, 61))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.label_3 = QtWidgets.QLabel(self.page)
+        self.label_3.setGeometry(QtCore.QRect(600, 460, 241, 241))
+        self.label_3.setObjectName("label_3")
+        self.pushButton_3 = QtWidgets.QPushButton(self.page)
+        self.pushButton_3.setGeometry(QtCore.QRect(850, 20, 31, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.pushButton_3.setFont(font)
+        self.pushButton_3.setStyleSheet("color: rgb(0, 0, 0);")
+        self.pushButton_3.setObjectName("pushButton_3")
+        MessageApp.addWidget(self.page)
+        self.page_2 = QtWidgets.QWidget()
+        self.page_2.setObjectName("page_2")
+        self.label = QtWidgets.QLabel(self.page_2)
+        self.label.setGeometry(QtCore.QRect(290, 40, 331, 51))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setItalic(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.label_4 = QtWidgets.QLabel(self.page_2)
+        self.label_4.setGeometry(QtCore.QRect(60, 140, 91, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.lineEdit = QtWidgets.QLineEdit(self.page_2)
+        self.lineEdit.setGeometry(QtCore.QRect(210, 140, 471, 51))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.lineEdit.setFont(font)
+        self.lineEdit.setStyleSheet("background-color: rgb(0, 255, 0);\n"
+"background-color: rgb(162, 255, 128);")
+        self.lineEdit.setObjectName("lineEdit")
+        self.label_5 = QtWidgets.QLabel(self.page_2)
+        self.label_5.setGeometry(QtCore.QRect(40, 250, 161, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.plainTextEdit = QtWidgets.QPlainTextEdit(self.page_2)
+        self.plainTextEdit.setGeometry(QtCore.QRect(210, 250, 471, 201))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.plainTextEdit.setFont(font)
+        self.plainTextEdit.setStyleSheet("background-color: rgb(162, 255, 128);\n"
+"color: rgb(32, 47, 255);")
+        self.plainTextEdit.setObjectName("plainTextEdit")
+        self.pushButton = QtWidgets.QPushButton(self.page_2)
+        self.pushButton.setGeometry(QtCore.QRect(350, 480, 201, 61))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton.setFont(font)
+        self.pushButton.setObjectName("pushButton")
+        self.label_8 = QtWidgets.QLabel(self.page_2)
+        self.label_8.setGeometry(QtCore.QRect(650, 460, 231, 181))
+        self.label_8.setObjectName("label_8")
+        self.pushButton_4 = QtWidgets.QPushButton(self.page_2)
+        self.pushButton_4.setGeometry(QtCore.QRect(20, 40, 31, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.pushButton_4.setFont(font)
+        self.pushButton_4.setStyleSheet("color: rgb(0, 0, 0);")
+        self.pushButton_4.setObjectName("pushButton_4")
+        MessageApp.addWidget(self.page_2)
+
+        self.retranslateUi(MessageApp)
+        MessageApp.setCurrentIndex(0)
+        QtCore.QMetaObject.connectSlotsByName(MessageApp)
+        messagewtp= self.plainTextEdit.toPlainText()
+        messagesms= self.plainTextEdit_2.toPlainText()
+        tosms=self.lineEdit_2.text()
+        towts=self.lineEdit.text()
+
+
+        			# action listener for buttons calling diffrent methods based on each button pressed 
+    
+        self.pushButton.clicked.connect(lambda: backendsms.whatsapp(self, self.lineEdit.text(),self.plainTextEdit.toPlainText()))
+        self.pushButton_2.clicked.connect(lambda: backendsms.sms(self, self.lineEdit_2.text(),self.plainTextEdit_2.toPlainText()))
+        self.pushButton_3.clicked.connect(self.wts)
+        self.pushButton_4.clicked.connect(self.sms)   
+
+    def wts(self):     #go to whatsapp page in stack
+        MessageApp.setCurrentIndex(1)  
+    def sms(self):     # go to sms page in stack 
+        MessageApp.setCurrentIndex(0)
+
+
+    def retranslateUi(self, MessageApp):
+        _translate = QtCore.QCoreApplication.translate
+        MessageApp.setWindowTitle(_translate("MessageApp", "MessageApp"))
+        self.label_6.setText(_translate("MessageApp", "MESSAGE:"))
+        self.label_2.setText(_translate("MessageApp", "SEND SMS"))
+        self.label_7.setText(_translate("MessageApp", "TO:"))
+        self.pushButton_2.setText(_translate("MessageApp", "SEND SMS"))
+        self.label_3.setText(_translate("MessageApp", "<html><head/><body><p><img src=\":/newPrefix/Mail.ico\"/></p></body></html>"))
+        self.pushButton_3.setText(_translate("MessageApp", ">>"))
+        self.label.setText(_translate("MessageApp", "SEND WHATSAPP"))
+        self.label_4.setText(_translate("MessageApp", "TO:"))
+        self.label_5.setText(_translate("MessageApp", "MESSAGE:"))
+        self.pushButton.setText(_translate("MessageApp", "SEND"))
+        self.label_8.setText(_translate("MessageApp", "<html><head/><body><p><img src=\":/newPrefix/383448-200.png\"/></p></body></html>"))
+        self.pushButton_4.setText(_translate("MessageApp", "<<"))
+
+import guimsg
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MessageApp = QtWidgets.QStackedWidget()
+    ui = Ui_MessageApp()
+    ui.setupUi(MessageApp)
+    MessageApp.show()
+    sys.exit(app.exec_())
